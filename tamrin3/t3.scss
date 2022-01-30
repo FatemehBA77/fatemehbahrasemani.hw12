@@ -1,0 +1,10 @@
+$pseudo:false;
+$y:200%;
+$x:21%;
+@mixin threeInput($pseudo, $x, $y) {
+    width: 100%;
+    padding-top: $y % $x;
+}
+input{
+    @include threeInput($pseudo,$x , $y)
+}
